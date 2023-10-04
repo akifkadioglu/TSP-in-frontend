@@ -13,6 +13,7 @@
             type="text"
             placeholder="İsim"
             maxlength="12"
+            autofocus 
             v-model="name"
             @keyup.enter="addLocation"
           />

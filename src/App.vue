@@ -4,6 +4,7 @@
     style="width: 100%; height: 100vh"
     :center="center"
     :zoom="7"
+    gesture-handling="greedy"
     @click="markerClicked"
   >
     <Marker :options="{ position: { lat: myLat, lng: myLng } }" />

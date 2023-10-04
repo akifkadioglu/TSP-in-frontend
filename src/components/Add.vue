@@ -12,8 +12,7 @@
             id="name"
             type="text"
             placeholder="İsim"
-            maxlength="12"
-            autofocus 
+            maxlength="12" 
             v-model="name"
             @keyup.enter="addLocation"
           />
@@ -54,6 +53,9 @@ import { ref, onMounted } from "vue";
 
 /* mounted */
 onMounted(() => {
+    document.getElementById("name")?.focus()
+
+
   coordinates.value =
     store.state.coordinates.lat + "," + store.state.coordinates.lng;
 });
